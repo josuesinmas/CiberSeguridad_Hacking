@@ -1,0 +1,46 @@
+conceptos basicos{
+    que es seguridad informaticas{
+        protege activos {
+            informacion{
+                personal
+                pagos
+                medica
+                credenciales
+                internas
+                segretos
+                sistemas
+                banco
+                clasificados
+            }
+            usuarios 
+            infraestructura
+        }
+        1 77% es sibercrimen organizado
+        2 amateur
+        3 desde la misma empresa
+    }
+    seguridad de la informacion{
+        afecta a {
+            confidencialidad
+            integridad
+            disponibilidad
+        }
+    }
+    ataques{
+        uso de token credencial (hacking)
+        ram scraper(malware)
+        phishin(social)
+        abuso de privilegios()
+        msdeliveri(error)
+        uso de backdoor o c2(hacking)
+        robo(fisico)
+        backdoor(malware)
+        pretexting(social)
+        skimmer(fisico)
+        fuerza bruta(hacking)
+        spyware/keyylogger(malware)
+    }
+    mas del 80% de las aplicaciones 
+    tienen una vulnerabilidad
+    el 13% tiene una vulnerabilidad critica  
+}
