@@ -1,0 +1,19 @@
+es un fallo de{
+    programacion
+    configuracion
+    diseño
+}
+Ejemplos{
+    MITRE top 25{
+        contiene los mayores errores de programacion
+    }
+    OWASP top 10{
+        vulnerabilidades de seguridad 
+        mas criticas en aplicaciones web
+    }
+    SANS top 20{
+        lista de vulnerabilidades 
+        que reguieren solucion inmediata
+    }
+
+}

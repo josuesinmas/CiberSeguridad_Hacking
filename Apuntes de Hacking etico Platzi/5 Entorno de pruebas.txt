@@ -1,0 +1,9 @@
+descargar virtual box para tener nuestro entorno
+configurar una red NAT local donde en la cual 
+tendremos conectada la maquina atacante y la victima
+como maquina atacante tendremos Kali linux
+como victima tendremos ubuntu lite server
+instalamos apache2 en la victima,
+para guardar todas las herramientas vulnerables
+instalamos en la victima php para conectarse con apache
+instalamos mysql en la victima para guardar las vulnerabilidades
