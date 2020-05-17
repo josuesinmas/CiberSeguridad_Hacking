@@ -1,7 +1,10 @@
+#!/usr/bin/env python
+#_*_ coding: utf8 _*_
+
 #el primer programa que se acostumbra a hacer cuand so aprende cualquier lenguaje
 print("Hola Mundo")
 
-#Formas de comparar datos
+#Operadores relacioneales
 # == igual
 # != no igual
 # > ayor que
@@ -42,16 +45,16 @@ print(saludo + a)
 print(not True)
 
 #formas de pedir datos y encadenarlos 
-nombre = raw_input("Digite su nombre: ")
-edad = int(raw_input("Digite la edad:"))
+nombre = input("Digite su nombre: ")
+edad = int(input("Digite la edad:"))
 print("Hola {}, su edad es {}, y el doble de su edad es {}".format(nombre,edad,edad*2))
 
 #tipos de condiciones logicas
 # if 
 # elif
 # else
-edad = int(raw_input("Digite su edad: "))
-#nombre = raw_input("Digite su nombre: ")
+edad = int(input("Digite su edad: "))
+#nombre = input("Digite su nombre: ")
 if not edad == 19:
 	print("Correcto")
 else:
@@ -59,15 +62,15 @@ else:
 
 
 #bucle for 
-numero = int(raw_input("Numero: "))
-mensaje = raw_input("Mensaje: ")
+numero = int(input("Numero: "))
+mensaje = input("Mensaje: ")
 for m in range(0,numero):
 	print("{} : {}".format(m,mensaje))
 
 
 #bucle while
-numero = int(raw_input("Numero: "))
-mensaje = raw_input("Mensaje: ")
+numero = int(input("Numero: "))
+mensaje = input("Mensaje: ")
 i = 1
 while i <= numero:
 	print(mensaje)
@@ -122,27 +125,34 @@ diccionario = dict(nombre="alumno",plataforma="Udemy",edad=18)
 for n in diccionario.keys():
 	print("{} Su valor es: {}".format(n,diccionario[n]))
 
+
+#compreccion de listas
+lista3 = [i for i in range(0,2000) if i%2 == 0]
+print(lista3)
+
+
+
 # Funciones
-def saludo():
+def saludo2():
 	print("Bienvenido")
 def despedida():
 	print("adios")
-def main():
-	saludo()
+def main0():
+	saludo2()
 	despedida()
 
 if __name__ == '__main__':
-	main()
+	main0()
 
 #funciones con multiples parametros
-def saludo2(nombre1,edad1):
+def saludo3(nombre1,edad1):
 	print("Hola {} tienes: {}".format(nombre1,edad1))
-def main():
-	nombre = raw_input("Nombre: ")
-	edad = int(raw_input("Edad: "))
-	saludo2(nombre,edad)
+def main1():
+	nombre = input("Nombre: ")
+	edad = int(input("Edad: "))
+	saludo3(nombre,edad)
 if __name__ == '__main__':
-	main()
+	main1()
 
 #creando una clase 
 class Carro1(object):
@@ -170,11 +180,11 @@ class Carro(object):
 			print("Frenar")
 
 #instanciamos la clase en la funcion main
-def main():
+def main2():
 	while True:
 		print("1 Acelerar")
 		print("2 Frenar")
-		valor = int(raw_input("> "))
+		valor = int(input("> "))
 		if valor == 1:
 			c = Carro(True)
 			c.movilidad()
@@ -185,7 +195,7 @@ def main():
 	#print(c.puertas)
 	#print(c.tipo)
 if __name__ == '__main__':#ejecutamos la funcion main si se cumple la condicion
-	main()
+	main2()
 
 
 #distintos tipos de funciones con metodos de clases
@@ -207,14 +217,14 @@ class prueba1(object):
 	@property #Con property trabajamos con funciones como si fueran variables al usar 'return'
 	def area_circulo(self):
 		return 3.1416*(self.radio**2)
-def main():
-	#nombre = raw_input("Nombre: ")
+def main3():
+	#nombre = input("Nombre: ")
 	#prueba1.saludo(nombre)
 	c = prueba1(5)
 	area = c.area_circulo
 	print(area)
 if __name__ == '__main__':
-	main()
+	main3()
 
 #utilizamos bloques try catght par manejar errores
 try:
